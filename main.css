@@ -33,6 +33,8 @@ ul.nav-list{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	padding:  0 2rem;
+
 }
 
 a {
@@ -152,6 +154,9 @@ header {
 
 .menu-toggler.open {
 	transform: rotate(-45deg);
+	top: 2rem;
+	right: 2rem;
+	position: fixed;
 
 }
 
@@ -234,6 +239,7 @@ header {
 
 li {
 	margin: 0 2rem;
+	padding:  0rem;
 }
 
 .nav-link {
@@ -547,16 +553,17 @@ input[type="submit"]:hover {
 }
 
 .up {
-	position: absolute;
+	position: fixed;
 	width: 5rem;
 	height: 5rem;
 	background-color: #eee;
 	border-radius: 100%;
-	right: 5rem;
-	top: -2.5rem;
+	right: 3rem;
+	bottom: 2.5rem;
 	display: flex;
 	animation: pulse 2s infinite;
 	cursor: pointer;
+	display: none;
 }
 
 .up i {
@@ -607,7 +614,7 @@ input[type="submit"]:hover {
 	}
 
 	.portfolio-description .cta {
-		
+
 		font-size: 2.5rem;
 	}
 
@@ -665,9 +672,14 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width:600px) {
-	.menu-toggler {
+	section{
+		width: 100%;
+		padding: 2 2rem;
+	}
+	.menu-toggler.open {
 		top: 2rem;
 		right: 2rem;
+		position: fixed;
 	}
 
 	.landing-text h1 {
@@ -723,20 +735,6 @@ input[type="submit"]:hover {
 	.up {
 		right: 2rem;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
